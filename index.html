@@ -6,6 +6,7 @@
   <meta name="description" content="Salim Vera, cantante peruano de rock televisivo, presenta su portada, trayectoria y próximas presentaciones en una landing page accesible y pensada para buscadores.">
   <meta name="keywords" content="Salim Vera, rock peruano, cantante peruano, música rock, eventos musicales, landing page, accesibilidad, SEO">
   <meta name="author" content="Salim Vera">
+  <meta name="theme-color" content="#08030f">
   <title>Salim Vera | Cantante de Rock Peruano</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://www.salimvera.com/">
@@ -26,6 +27,7 @@
         "genre": "Rock peruano",
         "description": "Salim Vera es un cantante peruano conocido y su energía rockera inspirada en Pedro Suárez-Vértiz.",
         "url": "https://www.salimvera.com/",
+        "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
         "birthPlace": "Perú",
         "knowsLanguage": "es",
         "sameAs": [
@@ -72,6 +74,27 @@
           "name": "Plaza Central",
           "address": "Lima, Perú"
         }
+      },
+      {
+        "@type": "MusicAlbum",
+        "name": "Luces del Rock",
+        "datePublished": "2024-09-01",
+        "genre": "Rock",
+        "url": "https://www.salimvera.com/discografia/luces-del-rock"
+      },
+      {
+        "@type": "MusicAlbum",
+        "name": "Conexiones Urbanas",
+        "datePublished": "2023-05-20",
+        "genre": "Rock alternativo",
+        "url": "https://www.salimvera.com/discografia/conexiones-urbanas"
+      },
+      {
+        "@type": "MusicAlbum",
+        "name": "En la Ciudad",
+        "datePublished": "2022-11-10",
+        "genre": "Rock latino",
+        "url": "https://www.salimvera.com/discografia/en-la-ciudad"
       }
     ]
   }
@@ -93,6 +116,8 @@
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#trayectoria">Trayectoria</a>
       <a href="#presentaciones">Próximas presentaciones</a>
+      <a href="#discografia">Discografía</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
@@ -184,6 +209,98 @@
           <img src="salim-vivo.jpg" alt="Público celebrando en un concierto de rock" loading="lazy">
           <figcaption>Salim Vera en vivo para su público.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section discography" id="discografia" aria-labelledby="discografia-title">
+      <div class="section-inner">
+        <div class="section-header-row">
+          <h2 id="discografia-title">Discografía</h2>
+          <p>Explora los lanzamientos de Salim Vera con un carrusel de álbumes que muestra sus canciones más importantes.</p>
+        </div>
+        <div class="carousel-wrapper">
+          <input class="carousel-input" type="radio" name="disc-carousel" id="slide-1" checked>
+          <input class="carousel-input" type="radio" name="disc-carousel" id="slide-2">
+          <input class="carousel-input" type="radio" name="disc-carousel" id="slide-3">
+
+          <div class="carousel-controls">
+            <label class="carousel-control prev control-1" for="slide-3" aria-label="Ir al álbum anterior">
+              <span aria-hidden="true">‹</span>
+            </label>
+            <label class="carousel-control next control-1" for="slide-2" aria-label="Ir al siguiente álbum">
+              <span aria-hidden="true">›</span>
+            </label>
+
+            <label class="carousel-control prev control-2" for="slide-1" aria-label="Ir al álbum anterior">
+              <span aria-hidden="true">‹</span>
+            </label>
+            <label class="carousel-control next control-2" for="slide-3" aria-label="Ir al siguiente álbum">
+              <span aria-hidden="true">›</span>
+            </label>
+
+            <label class="carousel-control prev control-3" for="slide-2" aria-label="Ir al álbum anterior">
+              <span aria-hidden="true">‹</span>
+            </label>
+            <label class="carousel-control next control-3" for="slide-1" aria-label="Ir al siguiente álbum">
+              <span aria-hidden="true">›</span>
+            </label>
+          </div>
+
+          <div class="carousel" role="list" aria-label="Carrusel de álbumes de discografía">
+            <div class="slides">
+              <article class="album-card slide" role="listitem">
+                <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&q=80" alt="Portada del álbum Luces del Rock">
+                <div class="album-content">
+                  <h3>Luces del Rock</h3>
+                  <p>2024 · Single debut con guitarras eléctricas y letras emotivas.</p>
+                </div>
+              </article>
+              <article class="album-card slide" role="listitem">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Portada del álbum Conexiones Urbanas">
+                <div class="album-content">
+                  <h3>Conexiones Urbanas</h3>
+                  <p>2023 · EP que mezcla rock con matices pop y energía televisiva.</p>
+                </div>
+              </article>
+              <article class="album-card slide" role="listitem">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=900&q=80" alt="Portada del álbum En la Ciudad">
+                <div class="album-content">
+                  <h3>En la Ciudad</h3>
+                  <p>2022 · Álbum conceptual inspirado en la vida urbana peruana.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-dots" aria-label="Indicadores del carrusel">
+            <label class="carousel-dot" for="slide-1" aria-label="Ver álbum Luces del Rock"></label>
+            <label class="carousel-dot" for="slide-2" aria-label="Ver álbum Conexiones Urbanas"></label>
+            <label class="carousel-dot" for="slide-3" aria-label="Ver álbum En la Ciudad"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="section-inner">
+        <div class="section-header-row">
+          <h2 id="contacto-title">Contacto</h2>
+          <p>¿Quieres trabajar con Salim o invitarlo a un evento? Escríbenos y te responderemos pronto.</p>
+        </div>
+        <div class="contact-panel">
+          <div>
+            <p>Correo electrónico:</p>
+            <a href="mailto:salim@ejemplo.com">salim@ejemplo.com</a>
+          </div>
+          <div>
+            <p>Booking & prensa:</p>
+            <a href="mailto:booking@salimvera.com">booking@salimvera.com</a>
+          </div>
+          <div>
+            <p>Redes sociales:</p>
+            <a href="https://www.instagram.com/salimvera">Instagram</a> · <a href="https://www.facebook.com/salimvera">Facebook</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
